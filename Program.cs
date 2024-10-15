@@ -1,3 +1,5 @@
+using BooknGo.Data;
+using Microsoft.EntityFrameworkCore;
 
 namespace BooknGo
 {
@@ -13,6 +15,9 @@ namespace BooknGo
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
+
+            builder.Services.AddDbContext<TicketingContext>(options =>
+            options.UseSqlite(builder.Configuration.GetConnectionString("TicketingDatabase")));
 
             var app = builder.Build();
 
