@@ -1,5 +1,4 @@
 ﻿using System.ComponentModel.DataAnnotations;
-using System.Net.Sockets;
 
 namespace BooknGo.Data.Models
 {
@@ -7,13 +6,17 @@ namespace BooknGo.Data.Models
     {
         [Key]
         public int UserId { get; set; }
-        [Required]
-        public string Name { get; set; }
-        [Required]
-        [EmailAddress]
-        public string Email { get; set; }
 
-        // Navigation property
-        public virtual ICollection<Ticket> Tickets { get; set; } = new HashSet<Ticket>();
+        [Required]
+        public string Username { get; set; }
+
+        [Required]
+        public string PasswordHash { get; set; } // Lagra lösenord som hash
+
+        public string Role { get; set; } // Exempel: Admin, Customer
+
+        // En användare kan vara kopplad till en kund
+        public int? CustomerId { get; set; }
+        public Customer Customer { get; set; }
     }
 }
