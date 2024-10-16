@@ -1,4 +1,6 @@
-﻿using BooknGo.Data.Models;
+﻿using AutoMapper;
+using BooknGo.Data.Models;
+using BooknGo.DTOs;
 using BooknGo.Interfaces;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -10,39 +12,47 @@ namespace BooknGo.Controllers
     public class CustomersController : ControllerBase
     {
         private readonly ICustomerService _customerService;
+        private readonly IMapper _mapper;
 
-        public CustomersController(ICustomerService customerService)
+        public CustomersController(ICustomerService customerService, IMapper mapper)
         {
             _customerService = customerService;
+            _mapper = mapper;
         }
 
         [HttpGet]
-        public ActionResult<IEnumerable<Customer>> GetAllCustomers()
+        public ActionResult<IEnumerable<CustomerDTO>> GetAllCustomers()
         {
-            return Ok(_customerService.GetAllCustomers());
+            var customers = _customerService.GetAllCustomers();
+            var customerDTOs = _mapper.Map<IEnumerable<CustomerDTO>>(customers);
+            return Ok(customerDTOs);
         }
 
         [HttpGet("{id}")]
-        public ActionResult<Customer> GetCustomerById(int id)
+        public ActionResult<CustomerDTO> GetCustomerById(int id)
         {
             var customer = _customerService.GetCustomerById(id);
             if (customer == null)
             {
                 return NotFound();
             }
-            return Ok(customer);
+            var customerDTO = _mapper.Map<CustomerDTO>(customer);
+            return Ok(customerDTO);
         }
 
         [HttpPost]
-        public ActionResult<Customer> AddCustomer(Customer customer)
+        public ActionResult<CustomerDTO> AddCustomer(CustomerDTO customerDTO)
         {
+            var customer = _mapper.Map<Customer>(customerDTO);
             var newCustomer = _customerService.AddCustomer(customer);
-            return CreatedAtAction(nameof(GetCustomerById), new { id = newCustomer.CustomerId }, newCustomer);
+            var newCustomerDTO = _mapper.Map<CustomerDTO>(newCustomer);
+            return CreatedAtAction(nameof(GetCustomerById), new { id = newCustomerDTO.CustomerId }, newCustomerDTO);
         }
 
         [HttpPut("{id}")]
-        public IActionResult UpdateCustomer(int id, Customer updatedCustomer)
+        public IActionResult UpdateCustomer(int id, CustomerDTO updatedCustomerDTO)
         {
+            var updatedCustomer = _mapper.Map<Customer>(updatedCustomerDTO);
             if (!_customerService.UpdateCustomer(id, updatedCustomer))
             {
                 return NotFound();

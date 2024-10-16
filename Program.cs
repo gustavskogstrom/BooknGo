@@ -23,9 +23,11 @@ namespace BooknGo
             builder.Services.AddScoped<IServiceService, ServiceService>();
             builder.Services.AddScoped<IBookingService, BookingService>();
             builder.Services.AddScoped<IPaymentService, PaymentService>();
+            builder.Services.AddAutoMapper(typeof(Program));
 
             builder.Services.AddDbContext<BookNGoDbContext>(options =>
-            options.UseSqlite(builder.Configuration.GetConnectionString("BookNGoDatabase")));
+            options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));
+
 
             var app = builder.Build();
 

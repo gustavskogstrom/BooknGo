@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BooknGo.Data.Migrations
 {
     [DbContext(typeof(BookNGoDbContext))]
-    [Migration("20241016135441_Initial")]
+    [Migration("20241016165505_Initial")]
     partial class Initial
     {
         /// <inheritdoc />

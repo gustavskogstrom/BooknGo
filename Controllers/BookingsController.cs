@@ -1,4 +1,6 @@
-﻿using BooknGo.Data.Models;
+﻿using AutoMapper;
+using BooknGo.Data.Models;
+using BooknGo.DTOs;
 using BooknGo.Interfaces;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -10,39 +12,47 @@ namespace BooknGo.Controllers
     public class BookingsController : ControllerBase
     {
         private readonly IBookingService _bookingService;
+        private readonly IMapper _mapper;
 
-        public BookingsController(IBookingService bookingService)
+        public BookingsController(IBookingService bookingService, IMapper mapper)
         {
             _bookingService = bookingService;
+            _mapper = mapper;
         }
 
         [HttpGet]
-        public ActionResult<IEnumerable<Booking>> GetAllBookings()
+        public ActionResult<IEnumerable<BookingDTO>> GetAllBookings()
         {
-            return Ok(_bookingService.GetAllBookings());
+            var bookings = _bookingService.GetAllBookings();
+            var bookingDTOs = _mapper.Map<IEnumerable<BookingDTO>>(bookings);
+            return Ok(bookingDTOs);
         }
 
         [HttpGet("{id}")]
-        public ActionResult<Booking> GetBookingById(int id)
+        public ActionResult<BookingDTO> GetBookingById(int id)
         {
             var booking = _bookingService.GetBookingById(id);
             if (booking == null)
             {
                 return NotFound();
             }
-            return Ok(booking);
+            var bookingDTO = _mapper.Map<BookingDTO>(booking);
+            return Ok(bookingDTO);
         }
 
         [HttpPost]
-        public ActionResult<Booking> AddBooking(Booking booking)
+        public ActionResult<BookingDTO> AddBooking(BookingDTO bookingDTO)
         {
+            var booking = _mapper.Map<Booking>(bookingDTO);
             var newBooking = _bookingService.AddBooking(booking);
-            return CreatedAtAction(nameof(GetBookingById), new { id = newBooking.BookingId }, newBooking);
+            var newBookingDTO = _mapper.Map<BookingDTO>(newBooking);
+            return CreatedAtAction(nameof(GetBookingById), new { id = newBookingDTO.BookingId }, newBookingDTO);
         }
 
         [HttpPut("{id}")]
-        public IActionResult UpdateBooking(int id, Booking updatedBooking)
+        public IActionResult UpdateBooking(int id, BookingDTO updatedBookingDTO)
         {
+            var updatedBooking = _mapper.Map<Booking>(updatedBookingDTO);
             if (!_bookingService.UpdateBooking(id, updatedBooking))
             {
                 return NotFound();
@@ -60,5 +70,4 @@ namespace BooknGo.Controllers
             return NoContent();
         }
     }
-
 }
