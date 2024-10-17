@@ -6,7 +6,7 @@ namespace BooknGo.Data.Models
     public class Booking
     {
         [Key]
-        public int BookingId { get; set; }
+        public Guid BookingId { get; set; }
 
         [Required]
         public DateTime BookingDate { get; set; }
@@ -15,12 +15,12 @@ namespace BooknGo.Data.Models
 
         // Foreign key for Customer
         [ForeignKey("Customer")]
-        public int CustomerId { get; set; }
+        public Guid CustomerId { get; set; }
         public Customer Customer { get; set; }
 
         // Foreign key for Service
         [ForeignKey("Service")]
-        public int ServiceId { get; set; }
+        public Guid ServiceId { get; set; }
         public Service Service { get; set; }
     }
 }

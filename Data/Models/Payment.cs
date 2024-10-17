@@ -6,7 +6,7 @@ namespace BooknGo.Data.Models
     public class Payment
     {
         [Key]
-        public int PaymentId { get; set; }
+        public Guid PaymentId { get; set; }
 
         [Required]
         public decimal Amount { get; set; }
@@ -19,7 +19,7 @@ namespace BooknGo.Data.Models
 
         // Foreign key for Booking
         [ForeignKey("Booking")]
-        public int BookingId { get; set; }
+        public Guid BookingId { get; set; }
         public Booking Booking { get; set; }
     }
 }

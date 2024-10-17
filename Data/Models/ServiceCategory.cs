@@ -5,7 +5,7 @@ namespace BooknGo.Data.Models
     public class ServiceCategory
     {
         [Key]
-        public int CategoryId { get; set; }
+        public Guid CategoryId { get; set; }
 
         [Required]
         public string CategoryName { get; set; }

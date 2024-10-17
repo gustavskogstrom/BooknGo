@@ -5,7 +5,7 @@ namespace BooknGo.Data.Models
     public class Customer
     {
         [Key]
-        public int CustomerId { get; set; }
+        public Guid CustomerId { get; set; }
 
         [Required]
         public string FullName { get; set; }

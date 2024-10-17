@@ -5,7 +5,7 @@ namespace BooknGo.Data.Models
     public class Address
     {
         [Key]
-        public int AddressId { get; set; }
+        public Guid AddressId { get; set; }
 
         [Required]
         public string Street { get; set; }

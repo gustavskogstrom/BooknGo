@@ -5,7 +5,7 @@ namespace BooknGo.Data.Models
     public class Notification
     {
         [Key]
-        public int NotificationId { get; set; }
+        public Guid NotificationId { get; set; }
 
         [Required]
         public string Message { get; set; }
@@ -13,10 +13,10 @@ namespace BooknGo.Data.Models
         public DateTime SentDate { get; set; }
 
         // Relation: Notifiering kan vara kopplad till en kund eller bokning
-        public int? CustomerId { get; set; }
+        public Guid? CustomerId { get; set; }
         public Customer Customer { get; set; }
 
-        public int? BookingId { get; set; }
+        public Guid? BookingId { get; set; }
         public Booking Booking { get; set; }
     }
 

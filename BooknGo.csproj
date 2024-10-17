@@ -7,6 +7,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Data\Json\**" />
+    <Content Remove="Data\Json\**" />
+    <EmbeddedResource Remove="Data\Json\**" />
+    <None Remove="Data\Json\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="AutoMapper" Version="13.0.1" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.10" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="8.0.10" />
@@ -18,8 +25,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Data\Json\" />
+    <Folder Include="Controllers\" />
     <Folder Include="Data\Migrations\" />
+    <Folder Include="Interfaces\" />
+    <Folder Include="Services\" />
   </ItemGroup>
 
   <ProjectExtensions><VisualStudio><UserProperties appsettings_1json__JsonSchema="https://api.app-prg1.zerops.io/api/rest/public/settings/zerops-yml-json-schema.json" /></VisualStudio></ProjectExtensions>
