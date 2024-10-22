@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Poppins", sans-seif;
+    line-height: 1.6;
+    text-align: center;
+    background-color: #f8f9fa;
+}
+
+.container{
+    
+}
+.navbar{
+
+}
+
+li{
+    list-style-type: none;
+}

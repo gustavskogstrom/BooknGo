@@ -56,13 +56,37 @@ namespace BooknGoApi.Controllers
                 return BadRequest("User data is invalid.");
             }
 
-            var user = await _userService.CreateUserAsync(userDto);
-            if (user == null)
+            var createdUser = await _userService.CreateUserAsync(userDto);
+            return CreatedAtAction(nameof(GetUserById), new { id = createdUser.Id }, createdUser);
+        }
+
+        [HttpPut("{id}")]
+        public async Task<IActionResult> UpdateUser(Guid id, [FromBody] UserDto userDto)
+        {
+            if (userDto == null)
             {
-                _logger.LogError("Failed to create user.");
-                return StatusCode(500, "A problem occurred while handling your request.");
+                _logger.LogError("Invalid user data.");
+                return BadRequest("User data is invalid.");
             }
-            return CreatedAtAction(nameof(GetUserById), new { id = user.Id }, user);
+
+            var updatedUser = await _userService.UpdateUserAsync(id, userDto);
+            if (updatedUser == null)
+            {
+                return NotFound("User not found.");
+            }
+            return Ok(updatedUser);
+        }
+
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> DeleteUser(Guid id)
+        {
+            var deleted = await _userService.DeleteUserAsync(id);
+            if (!deleted)
+            {
+                return NotFound("User not found.");
+            }
+            return NoContent();
         }
     }
+
 }

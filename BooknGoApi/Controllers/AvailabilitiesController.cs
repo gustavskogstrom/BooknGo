@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using BooknGoApi.Dtos;
 using BooknGoApi.Interface;
 using Microsoft.AspNetCore.Mvc;
 
@@ -27,5 +28,58 @@ public class AvailabilitiesController : ControllerBase
             return NotFound("No availabilities found.");
         }
         return Ok(availabilities);
+    }
+
+    [HttpGet("{id}")]
+    public async Task<IActionResult> GetAvailabilityById(Guid id)
+    {
+        var availability = await _availabilityService.GetAvailabilityByIdAsync(id);
+        if (availability == null)
+        {
+            _logger.LogWarning($"Availability with ID {id} not found.");
+            return NotFound("Availability not found.");
+        }
+        return Ok(availability);
+    }
+
+    [HttpPost]
+    public async Task<IActionResult> CreateAvailability([FromBody] AvailabilityDto availabilityDto)
+    {
+        if (availabilityDto == null)
+        {
+            _logger.LogError("Invalid availability data.");
+            return BadRequest("Availability data is invalid.");
+        }
+
+        var createdAvailability = await _availabilityService.CreateAvailabilityAsync(availabilityDto);
+        return CreatedAtAction(nameof(GetAvailabilityById), new { id = createdAvailability.Id }, createdAvailability);
+    }
+
+    [HttpPut("{id}")]
+    public async Task<IActionResult> UpdateAvailability(Guid id, [FromBody] AvailabilityDto availabilityDto)
+    {
+        if (availabilityDto == null)
+        {
+            _logger.LogError("Invalid availability data.");
+            return BadRequest("Availability data is invalid.");
+        }
+
+        var updatedAvailability = await _availabilityService.UpdateAvailabilityAsync(id, availabilityDto);
+        if (updatedAvailability == null)
+        {
+            return NotFound("Availability not found.");
+        }
+        return Ok(updatedAvailability);
+    }
+
+    [HttpDelete("{id}")]
+    public async Task<IActionResult> DeleteAvailability(Guid id)
+    {
+        var deleted = await _availabilityService.DeleteAvailabilityAsync(id);
+        if (!deleted)
+        {
+            return NotFound("Availability not found.");
+        }
+        return NoContent();
     }
 }
