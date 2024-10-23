@@ -10,11 +10,11 @@ namespace BooknGoApi.Data.Models
         public string Status { get; set; }
 
         // Foreign keys
-        public Guid UserId { get; set; }
+        public Guid CustomerId { get; set; }
         public Guid ResourceId { get; set; }
 
         // Navigation properties
-        public User User { get; set; }
+        public Customer Customer { get; set; }
         public Resource Resource { get; set; }
     }
 }

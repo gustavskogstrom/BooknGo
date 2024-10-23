@@ -1,85 +1,90 @@
 ﻿using AutoMapper;
 using BooknGoApi.Dtos;
 using BooknGoApi.Interface;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
-[Route("api/[controller]")]
-[ApiController]
-public class AvailabilitiesController : ControllerBase
+namespace BooknGoApi.Controllers
 {
-    private readonly IAvailabilityService _availabilityService;
-    private readonly ILogger<AvailabilitiesController> _logger;
-    private readonly IMapper _mapper;
-
-    public AvailabilitiesController(IAvailabilityService availabilityService, ILogger<AvailabilitiesController> logger, IMapper mapper)
+    [Authorize]
+    [Route("api/[controller]")]
+    [ApiController]
+    public class AvailabilitiesController : ControllerBase
     {
-        _availabilityService = availabilityService;
-        _logger = logger;
-        _mapper = mapper;
-    }
+        private readonly IAvailabilityService _availabilityService;
+        private readonly ILogger<AvailabilitiesController> _logger;
+        private readonly IMapper _mapper;
 
-    [HttpGet]
-    public async Task<IActionResult> GetAllAvailabilities()
-    {
-        var availabilities = await _availabilityService.GetAllAvailabilitiesAsync();
-        if (availabilities == null || availabilities.Count == 0)
+        public AvailabilitiesController(IAvailabilityService availabilityService, ILogger<AvailabilitiesController> logger, IMapper mapper)
         {
-            _logger.LogWarning("No availabilities found.");
-            return NotFound("No availabilities found.");
-        }
-        return Ok(availabilities);
-    }
-
-    [HttpGet("{id}")]
-    public async Task<IActionResult> GetAvailabilityById(Guid id)
-    {
-        var availability = await _availabilityService.GetAvailabilityByIdAsync(id);
-        if (availability == null)
-        {
-            _logger.LogWarning($"Availability with ID {id} not found.");
-            return NotFound("Availability not found.");
-        }
-        return Ok(availability);
-    }
-
-    [HttpPost]
-    public async Task<IActionResult> CreateAvailability([FromBody] AvailabilityDto availabilityDto)
-    {
-        if (availabilityDto == null)
-        {
-            _logger.LogError("Invalid availability data.");
-            return BadRequest("Availability data is invalid.");
+            _availabilityService = availabilityService;
+            _logger = logger;
+            _mapper = mapper;
         }
 
-        var createdAvailability = await _availabilityService.CreateAvailabilityAsync(availabilityDto);
-        return CreatedAtAction(nameof(GetAvailabilityById), new { id = createdAvailability.Id }, createdAvailability);
-    }
-
-    [HttpPut("{id}")]
-    public async Task<IActionResult> UpdateAvailability(Guid id, [FromBody] AvailabilityDto availabilityDto)
-    {
-        if (availabilityDto == null)
+        [HttpGet]
+        public async Task<IActionResult> GetAllAvailabilities()
         {
-            _logger.LogError("Invalid availability data.");
-            return BadRequest("Availability data is invalid.");
+            var availabilities = await _availabilityService.GetAllAvailabilitiesAsync();
+            if (availabilities == null || availabilities.Count == 0)
+            {
+                _logger.LogWarning("No availabilities found.");
+                return NotFound("No availabilities found.");
+            }
+            return Ok(availabilities);
         }
 
-        var updatedAvailability = await _availabilityService.UpdateAvailabilityAsync(id, availabilityDto);
-        if (updatedAvailability == null)
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetAvailabilityById(Guid id)
         {
-            return NotFound("Availability not found.");
+            var availability = await _availabilityService.GetAvailabilityByIdAsync(id);
+            if (availability == null)
+            {
+                _logger.LogWarning($"Availability with ID {id} not found.");
+                return NotFound("Availability not found.");
+            }
+            return Ok(availability);
         }
-        return Ok(updatedAvailability);
-    }
 
-    [HttpDelete("{id}")]
-    public async Task<IActionResult> DeleteAvailability(Guid id)
-    {
-        var deleted = await _availabilityService.DeleteAvailabilityAsync(id);
-        if (!deleted)
+        [HttpPost]
+        public async Task<IActionResult> CreateAvailability([FromBody] AvailabilityDto availabilityDto)
         {
-            return NotFound("Availability not found.");
+            if (availabilityDto == null)
+            {
+                _logger.LogError("Invalid availability data.");
+                return BadRequest("Availability data is invalid.");
+            }
+
+            var createdAvailability = await _availabilityService.CreateAvailabilityAsync(availabilityDto);
+            return CreatedAtAction(nameof(GetAvailabilityById), new { id = createdAvailability.Id }, createdAvailability);
         }
-        return NoContent();
+
+        [HttpPut("{id}")]
+        public async Task<IActionResult> UpdateAvailability(Guid id, [FromBody] AvailabilityDto availabilityDto)
+        {
+            if (availabilityDto == null)
+            {
+                _logger.LogError("Invalid availability data.");
+                return BadRequest("Availability data is invalid.");
+            }
+
+            var updatedAvailability = await _availabilityService.UpdateAvailabilityAsync(id, availabilityDto);
+            if (updatedAvailability == null)
+            {
+                return NotFound("Availability not found.");
+            }
+            return Ok(updatedAvailability);
+        }
+
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> DeleteAvailability(Guid id)
+        {
+            var deleted = await _availabilityService.DeleteAvailabilityAsync(id);
+            if (!deleted)
+            {
+                return NotFound("Availability not found.");
+            }
+            return NoContent();
+        }
     }
 }

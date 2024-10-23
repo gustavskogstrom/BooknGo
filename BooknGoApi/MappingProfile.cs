@@ -11,7 +11,7 @@ namespace BooknGoApi
             CreateMap<Availability, AvailabilityDto>().ReverseMap();
             CreateMap<Booking, BookingDto>().ReverseMap();
             CreateMap<Resource, ResourceDto>().ReverseMap();
-            CreateMap<User, UserDto>().ReverseMap();
+            CreateMap<Customer, CustomerDto>().ReverseMap();
         }
     }
 }
