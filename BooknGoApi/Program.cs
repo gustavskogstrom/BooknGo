@@ -1,6 +1,6 @@
-
 using BooknGoApi.Data;
 using BooknGoApi.Interface;
+using BooknGoApi.Middleware;
 using BooknGoApi.Services;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
@@ -58,8 +58,11 @@ namespace BooknGoApi
 
             app.UseHttpsRedirection();
 
-            app.UseAuthorization();
+            app.UseMiddleware<Register>();
 
+            // Authentication and Authorization
+            app.UseAuthentication();
+            app.UseAuthorization();
 
             app.MapControllers();
 
