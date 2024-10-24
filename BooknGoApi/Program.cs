@@ -1,4 +1,5 @@
 using BooknGoApi.Data;
+using BooknGoApi.Data.Models;
 using BooknGoApi.Interface;
 using BooknGoApi.Middleware;
 using BooknGoApi.Services;
@@ -26,11 +27,12 @@ namespace BooknGoApi
                 {
                     In = ParameterLocation.Header,
                     Name = "Authorization",
-                    Type = SecuritySchemeType.ApiKey,
+                    Type = SecuritySchemeType.ApiKey
                 });
 
                 options.OperationFilter<SecurityRequirementsOperationFilter>();
             });
+
 
             builder.Services.AddAutoMapper(typeof(Program));
 
@@ -38,9 +40,12 @@ namespace BooknGoApi
             builder.Services.AddScoped<IBookingService, BookingService>();
             builder.Services.AddScoped<IResourceService, ResourceService>();
             builder.Services.AddScoped<ICustomerService, CustomerService>();
+            //builder.Services.AddTransient<IEmailSender<IdentityUser>, EmailServices>();
 
             builder.Services.AddDbContext<BooknGoDbContext>(options =>
             options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+            builder.Services.AddAuthorization();
 
             builder.Services.AddIdentityApiEndpoints<IdentityUser>()
                 .AddEntityFrameworkStores<BooknGoDbContext>();
@@ -54,15 +59,11 @@ namespace BooknGoApi
                 app.UseSwaggerUI();
             }
 
+            app.UseMiddleware<Register>();
+
             app.MapIdentityApi<IdentityUser>();
 
             app.UseHttpsRedirection();
-
-            app.UseMiddleware<Register>();
-
-            // Authentication and Authorization
-            app.UseAuthentication();
-            app.UseAuthorization();
 
             app.MapControllers();
 

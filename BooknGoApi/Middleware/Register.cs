@@ -6,7 +6,7 @@
 
         private readonly string[] _blockedEndpoints = new[]
         {
-        "/register",
+        "/register", // <-- This is the endpoint that we want to block
         "/refresh",
         "/confirmEmail",
         "/resendConfirmationEmail",

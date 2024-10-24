@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BooknGoApi.Data.Migrations
 {
     [DbContext(typeof(BooknGoDbContext))]
-    [Migration("20241023150301_Relation")]
-    partial class Relation
+    [Migration("20241024115849_Initial")]
+    partial class Initial
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
