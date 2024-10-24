@@ -12,7 +12,7 @@ namespace BooknGoApi
 {
     public class Program
     {
-        public static void Main(string[] args)
+        public static async Task Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
 
@@ -41,6 +41,8 @@ namespace BooknGoApi
             builder.Services.AddScoped<IResourceService, ResourceService>();
             builder.Services.AddScoped<ICustomerService, CustomerService>();
             //builder.Services.AddTransient<IEmailSender<IdentityUser>, EmailServices>();
+            builder.Services.AddScoped<IUserService, UserService>();
+
 
             builder.Services.AddDbContext<BooknGoDbContext>(options =>
             options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));
@@ -66,6 +68,13 @@ namespace BooknGoApi
             app.UseHttpsRedirection();
 
             app.MapControllers();
+
+            // Skapa en standardanvändare vid uppstart
+            using (var scope = app.Services.CreateScope())
+            {
+                var userService = scope.ServiceProvider.GetRequiredService<IUserService>();
+                userService.CreateDefaultUserAsync().GetAwaiter().GetResult();
+            }
 
             app.Run();
         }
