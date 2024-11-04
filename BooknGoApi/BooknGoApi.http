@@ -1,0 +1,6 @@
+@BooknGoApi_HostAddress = http://localhost:5037
+
+GET {{BooknGoApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

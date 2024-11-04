@@ -1,0 +1,11 @@
+[
+  {
+    "id": "87654321-dcba-00fe-4321-fedcba987654",
+    "name": "Meeting Room Booking",
+    "description": "Booked meeting room for client presentation.",
+    "startTime": "2024-11-10T09:00:00Z",
+    "endTime": "2024-11-10T11:00:00Z",
+    "customerId": "12345678-abcd-ef00-1234-56789abcdef0"
+  }
+
+]

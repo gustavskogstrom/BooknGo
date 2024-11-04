@@ -1,0 +1,14 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\BooknGoApi",
+    "\\BooknGoApi\\Controllers",
+    "\\BooknGoApi\\Data",
+    "\\BooknGoApi\\Data\\Json",
+    "\\BooknGoApi\\Dtos",
+    "\\BooknGoApi\\Interface",
+    "\\BooknGoApi\\Services"
+  ],
+  "SelectedNode": "\\BooknGo.sln",
+  "PreviewInSolutionExplorer": false
+}
