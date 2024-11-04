@@ -3,64 +3,64 @@
   "WorkspaceRootPath": "C:\\Users\\gusta\\Desktop\\BooknGo\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E94826A7-38BC-49B9-9D87-D2E9049559FD}|BooknGoApi\\BooknGoApi.csproj|c:\\users\\gusta\\desktop\\bookngo\\bookngoapi\\data\\json\\booking.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{E94826A7-38BC-49B9-9D87-D2E9049559FD}|BooknGoApi\\BooknGoApi.csproj|solutionrelative:bookngoapi\\data\\json\\booking.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\gusta\\Desktop\\BooknGo\\BooknGoApi\\Data\\Json\\Booking.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:BooknGoApi\\Data\\Json\\Booking.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E94826A7-38BC-49B9-9D87-D2E9049559FD}|BooknGoApi\\BooknGoApi.csproj|c:\\users\\gusta\\desktop\\bookngo\\bookngoapi\\data\\json\\customer.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{E94826A7-38BC-49B9-9D87-D2E9049559FD}|BooknGoApi\\BooknGoApi.csproj|solutionrelative:bookngoapi\\data\\json\\customer.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\gusta\\Desktop\\BooknGo\\BooknGoApi\\Data\\Json\\Customer.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:BooknGoApi\\Data\\Json\\Customer.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E94826A7-38BC-49B9-9D87-D2E9049559FD}|BooknGoApi\\BooknGoApi.csproj|c:\\users\\gusta\\desktop\\bookngo\\bookngoapi\\services\\customerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E94826A7-38BC-49B9-9D87-D2E9049559FD}|BooknGoApi\\BooknGoApi.csproj|solutionrelative:bookngoapi\\services\\customerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\gusta\\Desktop\\BooknGo\\BooknGoApi\\Services\\CustomerService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:BooknGoApi\\Services\\CustomerService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E94826A7-38BC-49B9-9D87-D2E9049559FD}|BooknGoApi\\BooknGoApi.csproj|c:\\users\\gusta\\desktop\\bookngo\\bookngoapi\\services\\emailservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E94826A7-38BC-49B9-9D87-D2E9049559FD}|BooknGoApi\\BooknGoApi.csproj|solutionrelative:bookngoapi\\services\\emailservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\gusta\\Desktop\\BooknGo\\BooknGoApi\\Services\\EmailServices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:BooknGoApi\\Services\\EmailServices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E94826A7-38BC-49B9-9D87-D2E9049559FD}|BooknGoApi\\BooknGoApi.csproj|c:\\users\\gusta\\desktop\\bookngo\\bookngoapi\\interface\\icustomerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E94826A7-38BC-49B9-9D87-D2E9049559FD}|BooknGoApi\\BooknGoApi.csproj|solutionrelative:bookngoapi\\interface\\icustomerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\gusta\\Desktop\\BooknGo\\BooknGoApi\\Interface\\ICustomerService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:BooknGoApi\\Interface\\ICustomerService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E94826A7-38BC-49B9-9D87-D2E9049559FD}|BooknGoApi\\BooknGoApi.csproj|c:\\users\\gusta\\desktop\\bookngo\\bookngoapi\\interface\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E94826A7-38BC-49B9-9D87-D2E9049559FD}|BooknGoApi\\BooknGoApi.csproj|solutionrelative:bookngoapi\\interface\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\gusta\\Desktop\\BooknGo\\BooknGoApi\\Interface\\IUserService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:BooknGoApi\\Interface\\IUserService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E94826A7-38BC-49B9-9D87-D2E9049559FD}|BooknGoApi\\BooknGoApi.csproj|c:\\users\\gusta\\desktop\\bookngo\\bookngoapi\\interface\\ibookingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E94826A7-38BC-49B9-9D87-D2E9049559FD}|BooknGoApi\\BooknGoApi.csproj|solutionrelative:bookngoapi\\interface\\ibookingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\gusta\\Desktop\\BooknGo\\BooknGoApi\\Interface\\IBookingService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:BooknGoApi\\Interface\\IBookingService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E94826A7-38BC-49B9-9D87-D2E9049559FD}|BooknGoApi\\BooknGoApi.csproj|c:\\users\\gusta\\desktop\\bookngo\\bookngoapi\\services\\bookingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E94826A7-38BC-49B9-9D87-D2E9049559FD}|BooknGoApi\\BooknGoApi.csproj|solutionrelative:bookngoapi\\services\\bookingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\gusta\\Desktop\\BooknGo\\BooknGoApi\\Services\\BookingService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:BooknGoApi\\Services\\BookingService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E94826A7-38BC-49B9-9D87-D2E9049559FD}|BooknGoApi\\BooknGoApi.csproj|c:\\users\\gusta\\desktop\\bookngo\\bookngoapi\\controllers\\bookingscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E94826A7-38BC-49B9-9D87-D2E9049559FD}|BooknGoApi\\BooknGoApi.csproj|solutionrelative:bookngoapi\\controllers\\bookingscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\gusta\\Desktop\\BooknGo\\BooknGoApi\\Controllers\\BookingsController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:BooknGoApi\\Controllers\\BookingsController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E94826A7-38BC-49B9-9D87-D2E9049559FD}|BooknGoApi\\BooknGoApi.csproj|c:\\users\\gusta\\desktop\\bookngo\\bookngoapi\\controllers\\customerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E94826A7-38BC-49B9-9D87-D2E9049559FD}|BooknGoApi\\BooknGoApi.csproj|solutionrelative:bookngoapi\\controllers\\customerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\gusta\\Desktop\\BooknGo\\BooknGoApi\\Controllers\\CustomersController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:BooknGoApi\\Controllers\\CustomersController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E94826A7-38BC-49B9-9D87-D2E9049559FD}|BooknGoApi\\BooknGoApi.csproj|c:\\users\\gusta\\desktop\\bookngo\\bookngoapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{E94826A7-38BC-49B9-9D87-D2E9049559FD}|BooknGoApi\\BooknGoApi.csproj|solutionrelative:bookngoapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\gusta\\Desktop\\BooknGo\\BooknGoApi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:BooknGoApi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E94826A7-38BC-49B9-9D87-D2E9049559FD}|BooknGoApi\\BooknGoApi.csproj|c:\\users\\gusta\\desktop\\bookngo\\bookngoapi\\dtos\\customerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E94826A7-38BC-49B9-9D87-D2E9049559FD}|BooknGoApi\\BooknGoApi.csproj|solutionrelative:bookngoapi\\dtos\\customerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\gusta\\Desktop\\BooknGo\\BooknGoApi\\Dtos\\CustomerDto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:BooknGoApi\\Dtos\\CustomerDto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E94826A7-38BC-49B9-9D87-D2E9049559FD}|BooknGoApi\\BooknGoApi.csproj|c:\\users\\gusta\\desktop\\bookngo\\bookngoapi\\data\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E94826A7-38BC-49B9-9D87-D2E9049559FD}|BooknGoApi\\BooknGoApi.csproj|solutionrelative:bookngoapi\\data\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\gusta\\Desktop\\BooknGo\\BooknGoApi\\Data\\Models\\Customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:BooknGoApi\\Data\\Models\\Customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E94826A7-38BC-49B9-9D87-D2E9049559FD}|BooknGoApi\\BooknGoApi.csproj|c:\\users\\gusta\\desktop\\bookngo\\bookngoapi\\data\\models\\booking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E94826A7-38BC-49B9-9D87-D2E9049559FD}|BooknGoApi\\BooknGoApi.csproj|solutionrelative:bookngoapi\\data\\models\\booking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\gusta\\Desktop\\BooknGo\\BooknGoApi\\Data\\Models\\Booking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:BooknGoApi\\Data\\Models\\Booking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E94826A7-38BC-49B9-9D87-D2E9049559FD}|BooknGoApi\\BooknGoApi.csproj|c:\\users\\gusta\\desktop\\bookngo\\bookngoapi\\dtos\\bookingdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E94826A7-38BC-49B9-9D87-D2E9049559FD}|BooknGoApi\\BooknGoApi.csproj|solutionrelative:bookngoapi\\dtos\\bookingdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\gusta\\Desktop\\BooknGo\\BooknGoApi\\Dtos\\BookingDto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:BooknGoApi\\Dtos\\BookingDto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [

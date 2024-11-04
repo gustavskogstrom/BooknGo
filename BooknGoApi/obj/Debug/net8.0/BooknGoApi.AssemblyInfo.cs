@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BooknGoApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e2d5cfd140465044015d4a4aa92f2a2ed0297461")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+180df7e6c56485da658679d37fbbe96eff93fb2f")]
 [assembly: System.Reflection.AssemblyProductAttribute("BooknGoApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BooknGoApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
