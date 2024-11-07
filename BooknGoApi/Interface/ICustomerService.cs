@@ -7,10 +7,10 @@ namespace BooknGoApi.Interface
 {
     public interface ICustomerService
     {
-        Task<CustomerDto> GetCustomerByIdAsync(Guid id);
-        Task<List<CustomerDto>> GetAllCustomersAsync();
-        Task AddCustomerAsync(CustomerDto customerDto);
-        Task UpdateCustomerAsync(Guid id, CustomerDto customerDto);
-        Task DeleteCustomerAsync(Guid id);
+        Task<List<CustomerDto>> GetAllCustomers();
+        Task<CustomerDto> GetCustomerById(Guid id);
+        Task<CustomerDto> AddCustomer(CustomerDto customerDto);
+        Task<CustomerDto> UpdateCustomer(Guid id, CustomerDto customerDto);
+        Task<CustomerDto> DeleteCustomer(Guid id);
     }
 }

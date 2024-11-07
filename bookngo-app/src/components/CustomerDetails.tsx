@@ -82,8 +82,9 @@ const CustomerDetails: React.FC = () => {
             <p>Loading customer details...</p>
           ) : customer ? (
             <div>
-              <p><strong>Email:</strong> {customer.email}</p>
-
+              <div>
+                <p><strong>Email:</strong> {customer.email}</p>
+              </div>
               <h3>Bookings</h3>
               <ul>
                 {bookings.length > 0 ? (

@@ -1,5 +1,4 @@
 ﻿using BooknGoApi.Dtos;
-using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
@@ -8,12 +7,12 @@ namespace BooknGoApi.Interface
 {
     public interface IBookingService
     {
-        Task<BookingDto> GetBookingByIdAsync(Guid id);
-        Task<List<BookingDto>> GetAllBookingsAsync();
-        Task AddBookingAsync(BookingDto bookingDto);
-        Task UpdateBookingAsync(Guid id, BookingDto bookingDto);
-        Task DeleteBookingAsync(Guid id);
-        Task<List<BookingDto>> GetByCustomerId(Guid id);
+        Task<List<BookingDto>> GetAllBookings();
+        Task<BookingDto> GetBookingsById(Guid id);
         Task<BookingDto> CreateBooking(Guid customerId, BookingDto bookingDto);
+        Task<BookingDto> AddBooking(BookingDto bookingDto);
+        Task<BookingDto> UpdateBooking(Guid id, BookingDto bookingDto);
+        Task<BookingDto> DeleteBooking(Guid id);
+        Task<List<BookingDto>> GetByCustomerId(Guid id);
     }
 }

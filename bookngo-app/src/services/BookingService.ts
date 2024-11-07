@@ -64,8 +64,15 @@ export const BookingService = {
   },
 
   getByCustomerId: async (customerId: string): Promise<Booking[]> => {
-    const response = await axios.get(`${API_BASE_URL}/api/bookings/customer/${customerId}`);
-    return response.data;
+    try {
+      const response = await axios.get(`${API_BASE_URL}/api/bookings/customer/${customerId}`, {
+        withCredentials: true,
+      });
+      return response.data;
+    } catch (error: any) {
+      console.error('Failed to fetch bookings by customer ID:', error.response?.data || error.message);
+      throw new Error('Failed to fetch bookings by customer ID.');
+    }
   },
 
   createBooking: async (customerId: string, booking: Booking) => {

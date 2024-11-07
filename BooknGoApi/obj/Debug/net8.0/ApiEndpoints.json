@@ -1,17 +1,27 @@
 [
   {
     "ContainingType": "BooknGoApi.Controllers.BookingsController",
-    "Method": "GetAll",
+    "Method": "GetAllBookings",
     "RelativePath": "api/Bookings",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [],
-    "ReturnTypes": []
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[BooknGoApi.Dtos.BookingDto, BooknGoApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
   },
   {
     "ContainingType": "BooknGoApi.Controllers.BookingsController",
-    "Method": "Create",
+    "Method": "AddBooking",
     "RelativePath": "api/Bookings",
     "HttpMethod": "POST",
     "IsController": true,
@@ -23,11 +33,21 @@
         "IsRequired": true
       }
     ],
-    "ReturnTypes": []
+    "ReturnTypes": [
+      {
+        "Type": "BooknGoApi.Dtos.BookingDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
   },
   {
     "ContainingType": "BooknGoApi.Controllers.BookingsController",
-    "Method": "GetById",
+    "Method": "GetBookingById",
     "RelativePath": "api/Bookings/{id}",
     "HttpMethod": "GET",
     "IsController": true,
@@ -39,11 +59,21 @@
         "IsRequired": true
       }
     ],
-    "ReturnTypes": []
+    "ReturnTypes": [
+      {
+        "Type": "BooknGoApi.Dtos.BookingDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
   },
   {
     "ContainingType": "BooknGoApi.Controllers.BookingsController",
-    "Method": "Update",
+    "Method": "UpdateBooking",
     "RelativePath": "api/Bookings/{id}",
     "HttpMethod": "PUT",
     "IsController": true,
@@ -60,11 +90,21 @@
         "IsRequired": true
       }
     ],
-    "ReturnTypes": []
+    "ReturnTypes": [
+      {
+        "Type": "BooknGoApi.Dtos.BookingDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
   },
   {
     "ContainingType": "BooknGoApi.Controllers.BookingsController",
-    "Method": "Delete",
+    "Method": "DeleteBooking",
     "RelativePath": "api/Bookings/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
@@ -76,7 +116,43 @@
         "IsRequired": true
       }
     ],
-    "ReturnTypes": []
+    "ReturnTypes": [
+      {
+        "Type": "BooknGoApi.Dtos.BookingDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "BooknGoApi.Controllers.BookingsController",
+    "Method": "GetBookingsByCustomerId",
+    "RelativePath": "api/Bookings/Customer/{customerId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "customerId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[BooknGoApi.Dtos.BookingDto, BooknGoApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
   },
   {
     "ContainingType": "BooknGoApi.Controllers.BookingsController",
@@ -97,23 +173,17 @@
         "IsRequired": true
       }
     ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "BooknGoApi.Controllers.BookingsController",
-    "Method": "GetByCustomerId",
-    "RelativePath": "api/Bookings/Customer/{id}",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
+    "ReturnTypes": [
       {
-        "Name": "id",
-        "Type": "System.Guid",
-        "IsRequired": true
+        "Type": "BooknGoApi.Dtos.BookingDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
       }
-    ],
-    "ReturnTypes": []
+    ]
   },
   {
     "ContainingType": "BooknGoApi.Controllers.CustomersController",
@@ -123,7 +193,17 @@
     "IsController": true,
     "Order": 0,
     "Parameters": [],
-    "ReturnTypes": []
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[BooknGoApi.Dtos.CustomerDto, BooknGoApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
   },
   {
     "ContainingType": "BooknGoApi.Controllers.CustomersController",
@@ -139,7 +219,17 @@
         "IsRequired": true
       }
     ],
-    "ReturnTypes": []
+    "ReturnTypes": [
+      {
+        "Type": "BooknGoApi.Dtos.CustomerDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
   },
   {
     "ContainingType": "BooknGoApi.Controllers.CustomersController",
@@ -155,7 +245,17 @@
         "IsRequired": true
       }
     ],
-    "ReturnTypes": []
+    "ReturnTypes": [
+      {
+        "Type": "BooknGoApi.Dtos.CustomerDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
   },
   {
     "ContainingType": "BooknGoApi.Controllers.CustomersController",
@@ -176,7 +276,17 @@
         "IsRequired": true
       }
     ],
-    "ReturnTypes": []
+    "ReturnTypes": [
+      {
+        "Type": "BooknGoApi.Dtos.CustomerDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
   },
   {
     "ContainingType": "BooknGoApi.Controllers.CustomersController",
@@ -192,7 +302,17 @@
         "IsRequired": true
       }
     ],
-    "ReturnTypes": []
+    "ReturnTypes": [
+      {
+        "Type": "BooknGoApi.Dtos.CustomerDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
   },
   {
     "ContainingType": "Microsoft.AspNetCore.Routing.IdentityApiEndpointRouteBuilderExtensions\u002B\u003C\u003Ec__1\u00601[[Microsoft.AspNetCore.Identity.IdentityUser, Microsoft.Extensions.Identity.Stores, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60]]",

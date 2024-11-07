@@ -3,36 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\gusta\\Desktop\\BooknGo\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E94826A7-38BC-49B9-9D87-D2E9049559FD}|BooknGoApi\\BooknGoApi.csproj|c:\\users\\gusta\\desktop\\bookngo\\bookngoapi\\data\\json\\booking.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{E94826A7-38BC-49B9-9D87-D2E9049559FD}|BooknGoApi\\BooknGoApi.csproj|solutionrelative:bookngoapi\\data\\json\\booking.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E94826A7-38BC-49B9-9D87-D2E9049559FD}|BooknGoApi\\BooknGoApi.csproj|c:\\users\\gusta\\desktop\\bookngo\\bookngoapi\\data\\json\\customer.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{E94826A7-38BC-49B9-9D87-D2E9049559FD}|BooknGoApi\\BooknGoApi.csproj|solutionrelative:bookngoapi\\data\\json\\customer.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E94826A7-38BC-49B9-9D87-D2E9049559FD}|BooknGoApi\\BooknGoApi.csproj|c:\\users\\gusta\\desktop\\bookngo\\bookngoapi\\services\\customerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E94826A7-38BC-49B9-9D87-D2E9049559FD}|BooknGoApi\\BooknGoApi.csproj|solutionrelative:bookngoapi\\services\\customerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E94826A7-38BC-49B9-9D87-D2E9049559FD}|BooknGoApi\\BooknGoApi.csproj|c:\\users\\gusta\\desktop\\bookngo\\bookngoapi\\services\\emailservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E94826A7-38BC-49B9-9D87-D2E9049559FD}|BooknGoApi\\BooknGoApi.csproj|solutionrelative:bookngoapi\\services\\emailservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E94826A7-38BC-49B9-9D87-D2E9049559FD}|BooknGoApi\\BooknGoApi.csproj|c:\\users\\gusta\\desktop\\bookngo\\bookngoapi\\interface\\icustomerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E94826A7-38BC-49B9-9D87-D2E9049559FD}|BooknGoApi\\BooknGoApi.csproj|solutionrelative:bookngoapi\\interface\\icustomerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E94826A7-38BC-49B9-9D87-D2E9049559FD}|BooknGoApi\\BooknGoApi.csproj|c:\\users\\gusta\\desktop\\bookngo\\bookngoapi\\interface\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E94826A7-38BC-49B9-9D87-D2E9049559FD}|BooknGoApi\\BooknGoApi.csproj|solutionrelative:bookngoapi\\interface\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E94826A7-38BC-49B9-9D87-D2E9049559FD}|BooknGoApi\\BooknGoApi.csproj|c:\\users\\gusta\\desktop\\bookngo\\bookngoapi\\interface\\ibookingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E94826A7-38BC-49B9-9D87-D2E9049559FD}|BooknGoApi\\BooknGoApi.csproj|solutionrelative:bookngoapi\\interface\\ibookingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E94826A7-38BC-49B9-9D87-D2E9049559FD}|BooknGoApi\\BooknGoApi.csproj|c:\\users\\gusta\\desktop\\bookngo\\bookngoapi\\services\\bookingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E94826A7-38BC-49B9-9D87-D2E9049559FD}|BooknGoApi\\BooknGoApi.csproj|solutionrelative:bookngoapi\\services\\bookingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E94826A7-38BC-49B9-9D87-D2E9049559FD}|BooknGoApi\\BooknGoApi.csproj|c:\\users\\gusta\\desktop\\bookngo\\bookngoapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{E94826A7-38BC-49B9-9D87-D2E9049559FD}|BooknGoApi\\BooknGoApi.csproj|solutionrelative:bookngoapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E94826A7-38BC-49B9-9D87-D2E9049559FD}|BooknGoApi\\BooknGoApi.csproj|c:\\users\\gusta\\desktop\\bookngo\\bookngoapi\\controllers\\bookingscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -41,26 +13,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{E94826A7-38BC-49B9-9D87-D2E9049559FD}|BooknGoApi\\BooknGoApi.csproj|c:\\users\\gusta\\desktop\\bookngo\\bookngoapi\\controllers\\customerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E94826A7-38BC-49B9-9D87-D2E9049559FD}|BooknGoApi\\BooknGoApi.csproj|solutionrelative:bookngoapi\\controllers\\customerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E94826A7-38BC-49B9-9D87-D2E9049559FD}|BooknGoApi\\BooknGoApi.csproj|c:\\users\\gusta\\desktop\\bookngo\\bookngoapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{E94826A7-38BC-49B9-9D87-D2E9049559FD}|BooknGoApi\\BooknGoApi.csproj|solutionrelative:bookngoapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E94826A7-38BC-49B9-9D87-D2E9049559FD}|BooknGoApi\\BooknGoApi.csproj|c:\\users\\gusta\\desktop\\bookngo\\bookngoapi\\dtos\\customerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E94826A7-38BC-49B9-9D87-D2E9049559FD}|BooknGoApi\\BooknGoApi.csproj|solutionrelative:bookngoapi\\dtos\\customerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E94826A7-38BC-49B9-9D87-D2E9049559FD}|BooknGoApi\\BooknGoApi.csproj|c:\\users\\gusta\\desktop\\bookngo\\bookngoapi\\data\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E94826A7-38BC-49B9-9D87-D2E9049559FD}|BooknGoApi\\BooknGoApi.csproj|solutionrelative:bookngoapi\\data\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E94826A7-38BC-49B9-9D87-D2E9049559FD}|BooknGoApi\\BooknGoApi.csproj|c:\\users\\gusta\\desktop\\bookngo\\bookngoapi\\data\\models\\booking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E94826A7-38BC-49B9-9D87-D2E9049559FD}|BooknGoApi\\BooknGoApi.csproj|solutionrelative:bookngoapi\\data\\models\\booking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E94826A7-38BC-49B9-9D87-D2E9049559FD}|BooknGoApi\\BooknGoApi.csproj|c:\\users\\gusta\\desktop\\bookngo\\bookngoapi\\dtos\\bookingdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E94826A7-38BC-49B9-9D87-D2E9049559FD}|BooknGoApi\\BooknGoApi.csproj|solutionrelative:bookngoapi\\dtos\\bookingdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -95,127 +47,6 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Booking.json",
-              "DocumentMoniker": "C:\\Users\\gusta\\Desktop\\BooknGo\\BooknGoApi\\Data\\Json\\Booking.json",
-              "RelativeDocumentMoniker": "BooknGoApi\\Data\\Json\\Booking.json",
-              "ToolTip": "C:\\Users\\gusta\\Desktop\\BooknGo\\BooknGoApi\\Data\\Json\\Booking.json",
-              "RelativeToolTip": "BooknGoApi\\Data\\Json\\Booking.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-11-01T19:40:07.145Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Customer.json",
-              "DocumentMoniker": "C:\\Users\\gusta\\Desktop\\BooknGo\\BooknGoApi\\Data\\Json\\Customer.json",
-              "RelativeDocumentMoniker": "BooknGoApi\\Data\\Json\\Customer.json",
-              "ToolTip": "C:\\Users\\gusta\\Desktop\\BooknGo\\BooknGoApi\\Data\\Json\\Customer.json",
-              "RelativeToolTip": "BooknGoApi\\Data\\Json\\Customer.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-11-01T19:39:55.78Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "CustomerService.cs",
-              "DocumentMoniker": "C:\\Users\\gusta\\Desktop\\BooknGo\\BooknGoApi\\Services\\CustomerService.cs",
-              "RelativeDocumentMoniker": "BooknGoApi\\Services\\CustomerService.cs",
-              "ToolTip": "C:\\Users\\gusta\\Desktop\\BooknGo\\BooknGoApi\\Services\\CustomerService.cs",
-              "RelativeToolTip": "BooknGoApi\\Services\\CustomerService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADMAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-01T16:01:07.179Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "EmailServices.cs",
-              "DocumentMoniker": "C:\\Users\\gusta\\Desktop\\BooknGo\\BooknGoApi\\Services\\EmailServices.cs",
-              "RelativeDocumentMoniker": "BooknGoApi\\Services\\EmailServices.cs",
-              "ToolTip": "C:\\Users\\gusta\\Desktop\\BooknGo\\BooknGoApi\\Services\\EmailServices.cs",
-              "RelativeToolTip": "BooknGoApi\\Services\\EmailServices.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-01T16:01:06.545Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ICustomerService.cs",
-              "DocumentMoniker": "C:\\Users\\gusta\\Desktop\\BooknGo\\BooknGoApi\\Interface\\ICustomerService.cs",
-              "RelativeDocumentMoniker": "BooknGoApi\\Interface\\ICustomerService.cs",
-              "ToolTip": "C:\\Users\\gusta\\Desktop\\BooknGo\\BooknGoApi\\Interface\\ICustomerService.cs",
-              "RelativeToolTip": "BooknGoApi\\Interface\\ICustomerService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-01T15:59:29.082Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "IUserService.cs",
-              "DocumentMoniker": "C:\\Users\\gusta\\Desktop\\BooknGo\\BooknGoApi\\Interface\\IUserService.cs",
-              "RelativeDocumentMoniker": "BooknGoApi\\Interface\\IUserService.cs",
-              "ToolTip": "C:\\Users\\gusta\\Desktop\\BooknGo\\BooknGoApi\\Interface\\IUserService.cs",
-              "RelativeToolTip": "BooknGoApi\\Interface\\IUserService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-01T15:39:13.872Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "IBookingService.cs",
-              "DocumentMoniker": "C:\\Users\\gusta\\Desktop\\BooknGo\\BooknGoApi\\Interface\\IBookingService.cs",
-              "RelativeDocumentMoniker": "BooknGoApi\\Interface\\IBookingService.cs",
-              "ToolTip": "C:\\Users\\gusta\\Desktop\\BooknGo\\BooknGoApi\\Interface\\IBookingService.cs",
-              "RelativeToolTip": "BooknGoApi\\Interface\\IBookingService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-01T15:02:51.09Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "BookingService.cs",
-              "DocumentMoniker": "C:\\Users\\gusta\\Desktop\\BooknGo\\BooknGoApi\\Services\\BookingService.cs",
-              "RelativeDocumentMoniker": "BooknGoApi\\Services\\BookingService.cs",
-              "ToolTip": "C:\\Users\\gusta\\Desktop\\BooknGo\\BooknGoApi\\Services\\BookingService.cs",
-              "RelativeToolTip": "BooknGoApi\\Services\\BookingService.cs",
-              "ViewState": "AgIAADAAAAAAAAAAAAAAADgAAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-01T15:02:27.65Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "BookingsController.cs",
-              "DocumentMoniker": "C:\\Users\\gusta\\Desktop\\BooknGo\\BooknGoApi\\Controllers\\BookingsController.cs",
-              "RelativeDocumentMoniker": "BooknGoApi\\Controllers\\BookingsController.cs",
-              "ToolTip": "C:\\Users\\gusta\\Desktop\\BooknGo\\BooknGoApi\\Controllers\\BookingsController.cs",
-              "RelativeToolTip": "BooknGoApi\\Controllers\\BookingsController.cs",
-              "ViewState": "AgIAAEoAAAAAAAAAAAAAwFoAAAA5AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-01T15:01:25.257Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "CustomersController.cs",
-              "DocumentMoniker": "C:\\Users\\gusta\\Desktop\\BooknGo\\BooknGoApi\\Controllers\\CustomersController.cs",
-              "RelativeDocumentMoniker": "BooknGoApi\\Controllers\\CustomersController.cs",
-              "ToolTip": "C:\\Users\\gusta\\Desktop\\BooknGo\\BooknGoApi\\Controllers\\CustomersController.cs",
-              "RelativeToolTip": "BooknGoApi\\Controllers\\CustomersController.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-01T15:01:24.631Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\gusta\\Desktop\\BooknGo\\BooknGoApi\\appsettings.json",
               "RelativeDocumentMoniker": "BooknGoApi\\appsettings.json",
@@ -223,55 +54,34 @@
               "RelativeToolTip": "BooknGoApi\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-11-01T14:46:14.006Z"
+              "WhenOpened": "2024-11-07T14:49:46.976Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "CustomerDto.cs",
-              "DocumentMoniker": "C:\\Users\\gusta\\Desktop\\BooknGo\\BooknGoApi\\Dtos\\CustomerDto.cs",
-              "RelativeDocumentMoniker": "BooknGoApi\\Dtos\\CustomerDto.cs",
-              "ToolTip": "C:\\Users\\gusta\\Desktop\\BooknGo\\BooknGoApi\\Dtos\\CustomerDto.cs",
-              "RelativeToolTip": "BooknGoApi\\Dtos\\CustomerDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAA5AAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "BookingsController.cs",
+              "DocumentMoniker": "C:\\Users\\gusta\\Desktop\\BooknGo\\BooknGoApi\\Controllers\\BookingsController.cs",
+              "RelativeDocumentMoniker": "BooknGoApi\\Controllers\\BookingsController.cs",
+              "ToolTip": "C:\\Users\\gusta\\Desktop\\BooknGo\\BooknGoApi\\Controllers\\BookingsController.cs",
+              "RelativeToolTip": "BooknGoApi\\Controllers\\BookingsController.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-01T14:45:37.472Z"
+              "WhenOpened": "2024-11-07T14:48:29.078Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Customer.cs",
-              "DocumentMoniker": "C:\\Users\\gusta\\Desktop\\BooknGo\\BooknGoApi\\Data\\Models\\Customer.cs",
-              "RelativeDocumentMoniker": "BooknGoApi\\Data\\Models\\Customer.cs",
-              "ToolTip": "C:\\Users\\gusta\\Desktop\\BooknGo\\BooknGoApi\\Data\\Models\\Customer.cs",
-              "RelativeToolTip": "BooknGoApi\\Data\\Models\\Customer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "CustomersController.cs",
+              "DocumentMoniker": "C:\\Users\\gusta\\Desktop\\BooknGo\\BooknGoApi\\Controllers\\CustomersController.cs",
+              "RelativeDocumentMoniker": "BooknGoApi\\Controllers\\CustomersController.cs",
+              "ToolTip": "C:\\Users\\gusta\\Desktop\\BooknGo\\BooknGoApi\\Controllers\\CustomersController.cs",
+              "RelativeToolTip": "BooknGoApi\\Controllers\\CustomersController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-01T14:45:33.827Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Booking.cs",
-              "DocumentMoniker": "C:\\Users\\gusta\\Desktop\\BooknGo\\BooknGoApi\\Data\\Models\\Booking.cs",
-              "RelativeDocumentMoniker": "BooknGoApi\\Data\\Models\\Booking.cs",
-              "ToolTip": "C:\\Users\\gusta\\Desktop\\BooknGo\\BooknGoApi\\Data\\Models\\Booking.cs",
-              "RelativeToolTip": "BooknGoApi\\Data\\Models\\Booking.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-01T14:44:09.483Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "BookingDto.cs",
-              "DocumentMoniker": "C:\\Users\\gusta\\Desktop\\BooknGo\\BooknGoApi\\Dtos\\BookingDto.cs",
-              "RelativeDocumentMoniker": "BooknGoApi\\Dtos\\BookingDto.cs",
-              "ToolTip": "C:\\Users\\gusta\\Desktop\\BooknGo\\BooknGoApi\\Dtos\\BookingDto.cs",
-              "RelativeToolTip": "BooknGoApi\\Dtos\\BookingDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-01T14:44:03.587Z"
+              "WhenOpened": "2024-11-07T14:40:26.116Z",
+              "EditorCaption": ""
             }
           ]
         }

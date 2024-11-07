@@ -3,8 +3,8 @@ using BooknGoApi.Interface;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using SQLitePCL;
 using System;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 
 namespace BooknGoApi.Controllers
@@ -23,50 +23,22 @@ namespace BooknGoApi.Controllers
             _logger = logger;
         }
 
-        [HttpGet] 
-        public async Task<IActionResult> GetAll()
+        [HttpGet]
+        public async Task<ActionResult<List<BookingDto>>> GetAllBookings()
         {
-            var bookings = await _bookingService.GetAllBookingsAsync();
+            var bookings = await _bookingService.GetAllBookings();
+            if (bookings == null || bookings.Count == 0)
+            {
+                _logger.LogWarning("No bookings found.");
+                return NotFound("No bookings found.");
+            }
             return Ok(bookings);
         }
 
         [HttpGet("{id}")]
-        public async Task<IActionResult> GetById(Guid id)
+        public async Task<ActionResult<BookingDto>> GetBookingById(Guid id)
         {
-            var booking = await _bookingService.GetBookingByIdAsync(id);
-            if (booking == null)
-            {
-                _logger.LogWarning($"Booking with ID {id} not found.");
-                return NotFound("Booking not found.");
-            }
-            return Ok(booking);
-        }
-
-
-        [HttpPut("{id}")]
-        public async Task<IActionResult> Update(Guid id, [FromBody] BookingDto bookingDto)
-        {
-            if (bookingDto == null)
-            {
-                _logger.LogError("Invalid booking data.");
-                return BadRequest("Booking data is invalid.");
-            }
-
-            await _bookingService.UpdateBookingAsync(id, bookingDto);
-            return NoContent();
-        }
-
-        [HttpDelete("{id}")]
-        public async Task<IActionResult> Delete(Guid id)
-        {
-            await _bookingService.DeleteBookingAsync(id);
-            return NoContent();
-        }
-
-        [HttpGet("Customer/{id}")]
-        public async Task<IActionResult> GetByCustomerId(Guid id)
-        {
-            var booking = await _bookingService.GetByCustomerId(id);
+            var booking = await _bookingService.GetBookingsById(id);
             if (booking == null)
             {
                 _logger.LogWarning($"Booking with ID {id} not found.");
@@ -76,7 +48,7 @@ namespace BooknGoApi.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Create([FromBody] BookingDto bookingDto)
+        public async Task<ActionResult<BookingDto>> AddBooking([FromBody] BookingDto bookingDto)
         {
             if (bookingDto == null)
             {
@@ -84,12 +56,12 @@ namespace BooknGoApi.Controllers
                 return BadRequest("Booking data is invalid.");
             }
 
-            await _bookingService.AddBookingAsync(bookingDto);
-            return CreatedAtAction(nameof(GetById), new { id = bookingDto.Id }, bookingDto);
+            var addedBooking = await _bookingService.AddBooking(bookingDto);
+            return CreatedAtAction(nameof(GetBookingById), new { id = addedBooking.Id }, addedBooking);
         }
 
         [HttpPost("Customer/{customerId}/CreateBooking")]
-        public async Task<IActionResult> CreateBooking(Guid customerId, [FromBody] BookingDto bookingDto)
+        public async Task<ActionResult<BookingDto>> CreateBooking(Guid customerId, [FromBody] BookingDto bookingDto)
         {
             if (bookingDto == null)
             {
@@ -97,17 +69,53 @@ namespace BooknGoApi.Controllers
                 return BadRequest("Booking data is invalid.");
             }
 
-            try
-            {
-                var createdBooking = await _bookingService.CreateBooking(customerId, bookingDto);
-                return CreatedAtAction(nameof(GetById), new { id = createdBooking.Id }, createdBooking);
-            }
-            catch (Exception ex)
-            {
-                _logger.LogError($"Failed to create booking: {ex.Message}");
-                return StatusCode(500, "Internal server error");
-            }
+            var createdBooking = await _bookingService.CreateBooking(customerId, bookingDto);
+            return CreatedAtAction(nameof(GetBookingById), new { id = createdBooking.Id }, createdBooking);
         }
 
+        [HttpPut("{id}")]
+        public async Task<ActionResult<BookingDto>> UpdateBooking(Guid id, [FromBody] BookingDto bookingDto)
+        {
+            if (bookingDto == null)
+            {
+                _logger.LogError("Invalid booking data.");
+                return BadRequest("Booking data is invalid.");
+            }
+
+            var updatedBooking = await _bookingService.UpdateBooking(id, bookingDto);
+            if (updatedBooking == null)
+            {
+                _logger.LogWarning($"Booking with ID {id} not found for update.");
+                return NotFound("Booking not found.");
+            }
+
+            return Ok(updatedBooking);
+        }
+
+        [HttpDelete("{id}")]
+        public async Task<ActionResult<BookingDto>> DeleteBooking(Guid id)
+        {
+            var deletedBooking = await _bookingService.DeleteBooking(id);
+            if (deletedBooking == null)
+            {
+                _logger.LogWarning($"Booking with ID {id} not found for deletion.");
+                return NotFound("Booking not found.");
+            }
+
+            return Ok(deletedBooking);
+        }
+
+        [HttpGet("Customer/{customerId}")]
+        public async Task<ActionResult<List<BookingDto>>> GetBookingsByCustomerId(Guid customerId)
+        {
+            var bookings = await _bookingService.GetByCustomerId(customerId);
+            if (bookings == null || bookings.Count == 0)
+            {
+                _logger.LogWarning($"No bookings found for customer ID {customerId}.");
+                return NotFound("No bookings found for this customer.");
+            }
+
+            return Ok(bookings);
+        }
     }
 }
